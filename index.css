@@ -1,0 +1,46 @@
+@import './styles/classes.css'; /* do not remove */
+@import './styles/base.css'; /* do not remove */
+
+/*
+    REQUIREMENTS
+    ------------
+
+    <header> element:
+
+        The <header> element must (on screens with a minimum width of 800px) be a grid with an 'auto' number of rows and two columns of 1fr
+
+        The <div> which is the first child of the <header> must also (on screens with a minimum width of 800px) be a grid, with two rows set of 'max-content' height and an auto number of columns
+
+        The <div> inside that div, containing two paragraphs with the text "CSS Flexbox is a one-dimensional...", and "CSS Grid is a two-dimensional..." must (on screens with a minimum width of 800px) also be a grid with an 'auto' number of rows and two columns of 1fr. Additionally it must have a gap between the columns of width 2em
+
+    <section id="flexbox">
+
+        The <section> element with id 'flexbox' must be display: flex with its child elements laid out in a column
+
+        The <div> with id 'canvas' inside the section must be display: flex with its single child element vertically and horizontally centered
+
+        The <h2> inside the section must (on screens with a minimum width of 800px) have a font size of 6em
+
+    <section id="grid">
+
+        NOTE: All of the styles noted below must *only* be applied on screens with a minimum width of 800px
+
+        The <section> element with id 'grid' must be a grid with 5 rows (the first having height 'auto', the remaining four having height 250px) and three columns of 1fr
+
+        All direct children of the section must have 1em of padding on all sides
+
+        The <h2> element inside the section must span three columns, have its text aligned right, and have font size 6em
+
+        The first <p> element inside the section must span two columns
+
+        The <div> inside the section must start at column two and span two columns, start at row three and span three columns
+
+    <footer>
+
+        The <div> inside the footer must be display: flex, with its child elements laid out in a column on screens with a width below 800px, and laid out in a row on screens with a minimum width of 800px.
+
+        On screens wider than 800px, the <div> must additionally have 4em of padding on all sides, and the image and text inside must swap positions (image on top on smaller screens, image on the right-hand side on larger screens)
+
+        On screens wider than 800px, the <p> element inside the div must additionally have no top margin
+
+*/

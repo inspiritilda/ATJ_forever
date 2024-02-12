@@ -1,0 +1,15 @@
+/*
+    Functional CSS classes
+
+    Optionally you may add your own custom functional classes below, e.g.:
+
+        .grid {
+            display: grid;
+        }
+*/
+.bg-pink {
+    background-color: var(--pink);
+}
+.bg-green {
+    background-color: var(--green);
+}

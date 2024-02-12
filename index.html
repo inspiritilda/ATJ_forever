@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ACIT 1620 - Lab 4</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Roboto:wght@400;500;700&family=DM+Serif+Text&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="index.css">
+</head>
+<body id="top">
+    <!--
+
+        NOTE: The markup in this file *cannot* be modified, with one exception: you can add classes to elements (multiple classes are allowed, if necessary)
+
+    -->
+    <header>
+        <div class="bg-pink">
+            <h1>Lab 4</h1>
+            <div>
+                <p>CSS Flexbox is a one-dimensional layout system, laying out elements along a row or column</p>
+                <p>CSS Grid is a two-dimensional layout, laying out elements in rows and columns simultaneously</p>
+            </div>
+        </div>
+        <nav class="bg-green">
+            <ul>
+                <li>CSS <a href="#flexbox">Flexbox</a></li>
+                <li>CSS <a href="#grid">Grid</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="flexbox">
+            <h2>CSS Flexbox</h2>
+            <div>
+                <p>CSS Flexbox is a one-dimensional (either horizontal or vertical) layout method that can help us quickly create layouts otherwise difficult to achieve with previous techniques (e.g. positioning) discussed in this course.</p>
+                <p>First and foremost, Flexbox requires any elements you want to lay out to have a parent element set to display: flex. This parent element could be a div, containing several images; it could be the body, containing the header, main, and footer elements; or any other case where you would like to lay out elements in a row or column.</p>
+                <p>Flexbox can even be used for centering elements:</p>
+            </div>
+            <div id="canvas">
+                <div id="circle"></div>
+            </div>
+        </section>
+        <section id="grid">
+            <h2>CSS Grid</h2>
+            <p>CSS Grid is a responsive, two-dimensional (both horizontal and vertical) layout method that allows us to easily create complex layouts for the web.</p>
+            <p>Similar to CSS Flexbox, CSS Grid requires any elements you want to lay out to have a parent element whose display value is set to grid or inline-grid.</p>
+            <p>The number of columns and rows in a grid are defined by two properties: grid-template-columns and grid-template-rows</p>
+            <p>or by the shorthand grid property.</p>
+            <p>Child elements are placed using grid-column and grid-row</p>
+            <div></div>
+        </section>
+    </main>
+    <footer>
+        <a href="#top">
+            <div>
+                <p>Back to Top</p>
+                <img src="images/up-arrow.svg" alt="">
+            </div>
+        </a>
+    </footer>
+</body>
+</html>
