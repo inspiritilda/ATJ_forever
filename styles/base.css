@@ -1,0 +1,142 @@
+/*
+
+    NOTE: this file *cannot* be modified. Place your styles into index.css or the classes.css files
+
+*/
+
+:root {
+    --pink: #f9c0cd;
+    --green: #c9d9cc;
+    --darkcyan: #457878;
+    --diameter: 100px;
+    --gap: 2em;
+}
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    color: #181818;
+    background-color: rgb(244 244 244);
+}
+p {
+    margin-bottom: 0;
+}
+header {
+    & > * {
+        padding: 2em;
+    }
+    h1 {
+        margin: 0;
+        font-family: 'DM Serif Display', sans-serif;
+        font-size: max(16vw, 7em);
+        line-height: 1;
+    }
+    .grid p {
+        margin: 1rem 0;
+    }
+    ul {
+        padding-left: 0;
+        list-style: none;
+        margin-top: 0;
+    }
+    li {
+        font-weight: 700;
+        font-size: 3em;
+    }
+    li a {
+        color: var(--darkcyan);
+    }
+}
+section {
+    margin: 2em;
+    padding: 2rem;
+    background-color: white;
+}
+#grid h2, #flexbox h2 {
+    margin: 0;
+    font-size: 3em;
+    font-family: 'DM Serif Text', sans-serif;
+    font-weight: 700;
+}
+#flexbox {
+    &.gap {
+        gap: calc(var(--gap) * 2);
+    }
+    h2 {
+        color: var(--darkcyan);
+    }
+    p {
+        max-width: 600px;
+    }
+}
+#canvas {
+    & {
+        margin-top: 2em;
+        height: calc(80vw - 4em);
+        background-color: antiquewhite;
+    }
+    #circle {
+        width: var(--diameter);
+        height: var(--diameter);
+        border-radius: 50%;
+        background-color: darkorange;
+    }
+}
+#grid:hover {
+    h2 {
+        background-color: aliceblue;
+    }
+    p:first-of-type {
+        background-color: floralwhite;
+    }
+    p:nth-of-type(2) {
+        background-color: seashell;
+    }
+    p:nth-of-type(3) {
+        background-color: #f3faf3;
+    }
+    p:nth-of-type(4) {
+        background-color: #fef3f1;
+    }
+    p:nth-of-type(5) {
+        background-color: #e24d4d1c;
+    }
+    div {
+        background-color: #ebebf3a1;
+    }
+}
+#grid {
+    & * {
+        border: 1px solid transparent;
+    }
+    & > * {
+        padding: 0.5em;
+    }
+    h2 {
+        color: var(--darkcyan);
+        padding-left: 0;
+        padding-right: 10px;
+    }
+    p {
+        margin: 0;
+    }
+}
+footer {
+    div {
+        padding: 2rem;
+        background-color: #aed473;
+    }
+    p {
+        font-size: 3em;
+        font-weight: 500;
+        color: #f5ebc1;
+        margin: 0;
+        margin-top: 1rem;
+        line-height: 1;
+    }
+    a {
+        text-decoration: none;
+    }
+    img {
+        width: 100px;
+    }
+}
