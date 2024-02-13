@@ -1,6 +1,90 @@
 @import './styles/classes.css'; /* do not remove */
 @import './styles/base.css'; /* do not remove */
 
+header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+#flexbox {
+    display: flex;
+    flex-direction: column;
+}
+
+#flexbox #canvas {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto 250px 250px 250px 250px;
+}
+#grid > * {
+    padding: 1em;
+}
+
+footer > div {
+    display: flex;
+    flex-direction: column;
+}
+
+@media screen and (min-width: 800px) {
+
+    header {
+        grid-template-rows: auto;
+    }
+
+    header > div:first-child {
+        display: grid;
+        grid-template-rows: max-content max-content;
+    }
+
+    header > div:first-child > div {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 2em;
+    }
+
+    #flexbox h2 {
+        font-size: 6em;
+    }
+
+    #grid {
+        grid-template-rows: auto 250px 250px 250px 250px;
+    }
+
+    #grid h2 {
+        grid-column: span 3;
+        text-align: right;
+        font-size: 6em;
+    }
+
+    #grid p:first-child {
+        grid-column: span 2;
+    }
+
+    #grid > div {
+        grid-column: 2 / span 2;
+        grid-row: 3 / span 3;
+    }
+
+    footer > div {
+        flex-direction: row;
+        padding: 4em;
+    }
+
+    footer > div img {
+        order: 2;
+    }
+
+    footer > div p {
+        margin-top: 0;
+    }
+}
+
 /*
     REQUIREMENTS
     ------------
