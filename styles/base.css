@@ -1,12 +1,6 @@
-/*
-
-    NOTE: this file *cannot* be modified. Place your styles into index.css or the classes.css files
-
-*/
-
 :root {
     --pink: #f9c0cd;
-    --green: #c9d9cc;
+    --skyblue: #c3cff7;
     --darkcyan: #457878;
     --diameter: 100px;
     --gap: 2em;
