@@ -1,82 +1,67 @@
 @import './styles/classes.css';
 @import './styles/base.css';
-#flexbox {
-    display: flex;
-    flex-direction: column;
-}
-
-#flexbox #canvas {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 
 @media screen and (min-width: 800px) {
 
-    header {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: auto;
-    }
+  header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+  }
 
-    header > div:first-child {
-        display: grid;
-        grid-template-rows: max-content max-content;
-    }
+  header > div:first-child {
+    display: grid;
+    grid-template-rows: max-content max-content;
+  }
 
-    header > div:first-child > div {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        column-gap: 2em;
-    }
+  header > div:first-child > div {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 2em;
+  }
 
-    #flexbox h2 {
-        font-size: 6em;
-    }
-
-    #grid {
-        display: grid;
-        grid-template-rows: auto 250px 250px 250px 250px;
-        grid-template-columns: 1fr 1fr 1fr;
-        gap: 1em;
-        padding: 1em;
-      }
+  section {
+    display: grid;
+    grid-template-rows: auto 250px 250px 250px 250px;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
       
-      #grid > * {
-        padding: 1em;
-      }
+  section > * {
+    padding: 1em;
+  }
       
-      #grid h2 {
-        grid-column: span 3;
-        text-align: right;
-        font-size: 6em;
-      }
+  section h2 {
+    grid-column: span 3;
+    text-align: right;
+    font-size: 6em;
+  }
       
-      #grid p:first-of-type {
-        grid-column: span 2;
-      }
-      
-      #grid div {
-        grid-column: 2 / span 2;
-        grid-row: 3 / span 3;
-      }    
+  section div {
+    grid-column: 2 / span 2;
+    grid-row: 3 / span 3;
+    }    
 
-    footer div {
-        display: flex;
-        flex-direction: column;
-    }
+  footer div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 4em;
+    align-items: center;
+  }
+  
+  footer p {
+    margin-top: 0;
+  }
 }
 
 @media screen and (max-width: 800px) {
-    footer div {
-        display: flex;
-        padding: 4em;
-      }
-      footer div img {
-        order: 1;
-        margin-right: 2em;
-      }
-      footer div p {
-        margin-top: 0;
-      }
+  footer div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  footer p {
+    order: 2;
+  }
 }

@@ -1,7 +1,7 @@
 :root {
     --pink: #f9c0cd;
     --skyblue: #c3cff7;
-    --darkcyan: #457878;
+    --navy: #192573;
     --diameter: 100px;
     --gap: 2em;
 }
@@ -34,10 +34,11 @@ header {
     }
     li {
         font-weight: 700;
-        font-size: 3em;
+        font-size: 2em;
     }
     li a {
-        color: var(--darkcyan);
+        color: var(--navy);
+        text-decoration: none;
     }
 }
 section {
@@ -45,13 +46,13 @@ section {
     padding: 2rem;
     background-color: white;
 }
-#grid h2, #flexbox h2 {
+section h2 {
     margin: 0;
     font-size: 3em;
     font-family: 'DM Serif Text', sans-serif;
     font-weight: 700;
 }
-#flexbox {
+section {
     &.gap {
         gap: calc(var(--gap) * 2);
     }
@@ -62,43 +63,31 @@ section {
         max-width: 600px;
     }
 }
-#canvas {
-    & {
-        margin-top: 2em;
-        height: calc(80vw - 4em);
-        background-color: antiquewhite;
-    }
-    #circle {
-        width: var(--diameter);
-        height: var(--diameter);
-        border-radius: 50%;
-        background-color: darkorange;
-    }
-}
-#grid:hover {
+
+section:hover {
     h2 {
-        background-color: aliceblue;
+        background-color: rgb(240, 252, 255);
     }
     p:first-of-type {
-        background-color: floralwhite;
+        background-color: rgb(240, 240, 255);
     }
     p:nth-of-type(2) {
-        background-color: seashell;
+        background-color: rgb(238, 250, 255);
     }
     p:nth-of-type(3) {
-        background-color: #f3faf3;
+        background-color: rgb(240, 240, 255);
     }
     p:nth-of-type(4) {
-        background-color: #fef3f1;
+        background-color: rgb(238, 250, 255);
     }
     p:nth-of-type(5) {
-        background-color: #e24d4d1c;
+        background-color: rgb(240, 240, 255);
     }
     div {
-        background-color: #ebebf3a1;
+        background-color: rgb(240, 252, 255);
     }
 }
-#grid {
+section {
     & * {
         border: 1px solid transparent;
     }
@@ -117,20 +106,17 @@ section {
 footer {
     div {
         padding: 2rem;
-        background-color: #aed473;
+        background-color: #c3cff7;
     }
     p {
         font-size: 3em;
         font-weight: 500;
-        color: #f5ebc1;
+        color: rgb(255, 255, 255);
         margin: 0;
         margin-top: 1rem;
         line-height: 1;
     }
     a {
         text-decoration: none;
-    }
-    img {
-        width: 100px;
     }
 }
