@@ -52,6 +52,11 @@
   footer p {
     margin-top: 0;
   }
+
+  .image {
+    width: 100px;
+    height: 100px;
+  }
 }
 
 @media screen and (max-width: 800px) {
@@ -63,5 +68,10 @@
 
   footer p {
     order: 2;
+  }
+  
+  .image {
+    width: 100px;
+    height: 100px;
   }
 }
